@@ -1,8 +1,6 @@
 # SftpTree
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sftp_tree`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is a Ruby library that allows you to get a tree from a remote location over sftp. When the resulting hash is serialized into JSON it uses the JSTree syntax.
 
 ## Installation
 
@@ -22,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'sftp_tree'
+
+tree = SftpTree::get_core_tree('test.example.com', 'demo', 'password', '/')
+
+```
+Result:
+
+```ruby
+{:core=>{:data=>{:text=>"/", :children=>[{:text=>"/pub/", :children=>[{:text=>"/pub/example/", :children=>["ConsoleClient.png", "ConsoleClientSmall.png", "FtpDownloader.png", "imap-console-client.png", "KeyGenerator.png", "KeyGeneratorSmall.png", "mail-editor.png", "mail-send-winforms.png", "mime-explorer.png", "pocketftp.png", "pocketftpSmall.png", "pop3-browser.png", "pop3-console-client.png", "readme.txt", "ResumableTransfer.png", "winceclient.png", "winceclientSmall.png", "WinFormClient.png", "WinFormClientSmall.png"]}]}, "readme.txt"]}}}
+```
 
 ## Development
 
@@ -32,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sftp_tree.
+Bug reports and pull requests are welcome on GitHub at https://github.com/little9/sftp_tree.
 
 
 ## License
