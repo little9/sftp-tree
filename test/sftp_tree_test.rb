@@ -17,7 +17,7 @@ class SftpTreeTest < Minitest::Test
 
   def test_that_you_can_get_jstree_style_tree
     data = SftpTree::get_core_tree('test.rebex.net', 'demo', 'password', '/')
-    assert_equal(data[:core][:data][:text], '/')
+    assert_equal(data[:data][:text], '/')
     
   end
   

@@ -29,7 +29,7 @@ tree = SftpTree::get_core_tree('test.example.com', 'demo', 'password', '/')
 Result:
 
 ```ruby
-{:core=>{:data=>{:text=>"/", :children=>[{:text=>"/pub/", :children=>[{:text=>"/pub/example/", :children=>["ConsoleClient.png", "ConsoleClientSmall.png", "FtpDownloader.png", "imap-console-client.png", "KeyGenerator.png", "KeyGeneratorSmall.png", "mail-editor.png", "mail-send-winforms.png", "mime-explorer.png", "pocketftp.png", "pocketftpSmall.png", "pop3-browser.png", "pop3-console-client.png", "readme.txt", "ResumableTransfer.png", "winceclient.png", "winceclientSmall.png", "WinFormClient.png", "WinFormClientSmall.png"]}]}, "readme.txt"]}}}
+{:data=>{:text=>"/", :children=>[{:text=>"/pub/", :children=>[{:text=>"/pub/example/", :children=>["ConsoleClient.png", "ConsoleClientSmall.png", "FtpDownloader.png", "imap-console-client.png", "KeyGenerator.png", "KeyGeneratorSmall.png", "mail-editor.png", "mail-send-winforms.png", "mime-explorer.png", "pocketftp.png", "pocketftpSmall.png", "pop3-browser.png", "pop3-console-client.png", "readme.txt", "ResumableTransfer.png", "winceclient.png", "winceclientSmall.png", "WinFormClient.png", "WinFormClientSmall.png"]}]}, "readme.txt"]}}
 ```
 
 ## Development

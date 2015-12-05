@@ -29,8 +29,7 @@ module SftpTree
   def self.get_core_tree(host, username, password, path)
     data = self.get_tree(host,username,password,path)
     root_data = { :data => data }
-    core_data = { :core => root_data }
-    return core_data
+    return root_data
   end
   
 end
